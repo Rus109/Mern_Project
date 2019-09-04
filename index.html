@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Intro to Node and MongoDB</title>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+ </head>
+ 
+ <body>
+ <h1>Demo of Data Entry</h1>
+ <form method="post" action="/addname">
+ 
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td><input type="text" name="firstName" placeholder="Enter first name..." required></td>
+        <td><input type="text" name="lastName" placeholder="Enter last name..." required></td>
+        <td><input type="int" name="age" placeholder="Enter age..." required></td>
+    </tr>
+    
+</table>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+ </html>
