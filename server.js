@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 5000;
-
 //app.get('/', (req, res) => res.send('API Running'));
 
 
@@ -22,8 +21,10 @@ var nameSchema = new mongoose.Schema({
 });
 
 var User = mongoose.model("User", nameSchema);
-
+app.use(express.static(__dirname + '/public'));
 app.get("/", (req, res) => {
+    
+
  res.sendFile(__dirname + "/index.html");
 });
 
