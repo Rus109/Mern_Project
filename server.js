@@ -25,7 +25,7 @@ app.use(express.static(__dirname + '/public'));
 app.get("/", (req, res) => {
     
 
- res.sendFile(__dirname + "/index.html");
+ res.sendFile(__dirname + "/resources/html_files/index.html");
 });
 
 app.post("/addname", (req, res) => {
